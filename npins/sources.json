@@ -1,0 +1,51 @@
+{
+  "pins": {
+    "jj-diffconflicts": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rafikdraoui",
+        "repo": "jj-diffconflicts"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "a2aa9a247b56d2c1a6f6be81bcf41c5450cc82ff",
+      "url": "https://github.com/rafikdraoui/jj-diffconflicts/archive/a2aa9a247b56d2c1a6f6be81bcf41c5450cc82ff.tar.gz",
+      "hash": "sha256-MjacjGlBRwActBBGeBZDHz8jz5J3Mt6KoDsf8WKgUDA="
+    },
+    "kdl-rs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "kdl-org",
+        "repo": "kdl-rs"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "ce82d2ce3e827eddc6bbb4ec4c315aaf6f9adc08",
+      "url": "https://github.com/kdl-org/kdl-rs/archive/ce82d2ce3e827eddc6bbb4ec4c315aaf6f9adc08.tar.gz",
+      "hash": "sha256-fxHBQnBlkoOE1thYajxbkVYCN2kfaz62V3Wn2qvv8Fo="
+    },
+    "mnw": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Gerg-L",
+        "repo": "mnw"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "0871dbf63a53610c95db04439ed8ea4d6ec9c160",
+      "url": "https://github.com/Gerg-L/mnw/archive/0871dbf63a53610c95db04439ed8ea4d6ec9c160.tar.gz",
+      "hash": "sha256-VKKe8r4pwCGWZ3Yr9CPN129R4S3CKLSrlYqdYz3vKpM="
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "artifact": "nixexprs.tar.xz",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1025128.e52c192be9d7/nixexprs.tar.xz",
+      "hash": "sha256-OBddwHNJ+qxOHaKih0bE2PXJeZHlzUC8WOHZrUcnFwY="
+    }
+  },
+  "version": 8
+}
