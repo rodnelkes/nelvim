@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "ce82d2ce3e827eddc6bbb4ec4c315aaf6f9adc08",
-      "url": "https://github.com/kdl-org/kdl-rs/archive/ce82d2ce3e827eddc6bbb4ec4c315aaf6f9adc08.tar.gz",
-      "hash": "sha256-fxHBQnBlkoOE1thYajxbkVYCN2kfaz62V3Wn2qvv8Fo="
+      "revision": "14a44c0310b68e00c68857c167174ed4c0cbcfb5",
+      "url": "https://github.com/kdl-org/kdl-rs/archive/14a44c0310b68e00c68857c167174ed4c0cbcfb5.tar.gz",
+      "hash": "sha256-uXWltmF9V4xGLf24lNUBwsGnjVzVr+JN0vs4PSz84XY="
     },
     "mnw": {
       "type": "Git",
@@ -48,9 +48,9 @@
       },
       "branch": "nixos-unstable",
       "submodules": false,
-      "revision": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "url": "https://github.com/NixOS/nixpkgs/archive/e2587caef70cea85dd97d7daab492899902dbf5d.tar.gz",
-      "hash": "sha256-wWFrV5/Qbm+lyt5x20E/bSbfJiGKMo4RCxZV8cl/WZI="
+      "revision": "ec2d622de0773551768cf98f3fc50cbcc003b9c5",
+      "url": "https://github.com/NixOS/nixpkgs/archive/ec2d622de0773551768cf98f3fc50cbcc003b9c5.tar.gz",
+      "hash": "sha256-Ue1Yo8gfHdD4TMtNewhA4tkSYeFqXThju0nCyJc3ALo="
     }
   },
   "version": 8
