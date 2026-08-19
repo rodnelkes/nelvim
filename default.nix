@@ -17,7 +17,9 @@ mnw.lib.wrap pkgs {
     "vim"
   ];
 
-  initLua = ''require("nelvim")'';
+  luaFiles = [
+    ./init.lua
+  ];
 
   plugins = {
     start = import ./nix/start.nix args;
