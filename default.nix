@@ -6,9 +6,8 @@
 let
   inherit (pkgs.lib.fileset) toSource;
 
-  args = { inherit sources pkgs; };
-
   mnw = import sources.mnw;
+  args = { inherit sources pkgs; };
 in
 mnw.lib.wrap pkgs {
   appName = "nelvim";
@@ -19,8 +18,6 @@ mnw.lib.wrap pkgs {
   ];
 
   initLua = ''require("nelvim")'';
-
-  extraBinPath = import ./nix/binaries.nix args;
 
   plugins = {
     start = import ./nix/start.nix args;
@@ -33,4 +30,6 @@ mnw.lib.wrap pkgs {
       impure = "/home/rodnelkes/Projects/nelvim/nelvim";
     };
   };
+
+  extraBinPath = import ./nix/binaries.nix args;
 }
