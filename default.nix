@@ -4,23 +4,13 @@
   ...
 }:
 let
-  inherit (builtins) readFile;
-  inherit (pkgs.rustPlatform) buildRustPackage;
   inherit (pkgs.vimUtils) buildVimPlugin;
   inherit (pkgs.lib.fileset) toSource;
 
+  args = { inherit sources pkgs; };
+
   nelvim_path = "/home/rodnelkes/Projects/nelvim/nelvim";
   mnw = import sources.mnw;
-
-  kdlSrc = sources.kdl-rs.outPath;
-  kdlLspCargoTOML = fromTOML (readFile "${kdlSrc}/tools/kdl-lsp/Cargo.toml");
-  kdl-lsp = buildRustPackage {
-    pname = kdlLspCargoTOML.package.name;
-    version = kdlLspCargoTOML.package.version;
-    cargoLock.lockFile = "${kdlSrc}/Cargo.lock";
-    src = kdlSrc;
-    cargoBuildFlags = [ "-p kdl-lsp" ];
-  };
 
   jj-diffconflicts = buildVimPlugin {
     name = "jj-diffconflicts";
@@ -37,41 +27,7 @@ mnw.lib.wrap pkgs {
 
   initLua = ''require("nelvim")'';
 
-  extraBinPath = with pkgs; [
-    # bash
-    bash-language-server
-    shfmt
-
-    # c/c++
-    clang-tools
-
-    # kdl
-    kdl-lsp
-    kdlfmt
-
-    # lua
-    lua-language-server
-    stylua
-
-    # nix
-    nixd
-    nixfmt
-
-    # nu
-    nushell
-    nufmt
-
-    # python
-    basedpyright
-    ruff
-
-    # qml
-    kdePackages.qtdeclarative
-
-    # yaml
-    yaml-language-server
-    yamlfmt
-  ];
+  extraBinPath = import ./nix/binaries.nix args;
 
   plugins = {
     start = with pkgs.vimPlugins; [
