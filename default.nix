@@ -92,20 +92,7 @@ mnw.lib.wrap pkgs {
       jj-diffconflicts
 
       # treesitter
-      (nvim-treesitter.withPlugins (
-        p: with p; [
-          bash
-          c
-          cpp
-          nu
-          kdl
-          lua
-          nix
-          python
-          qmljs
-          yaml
-        ]
-      ))
+      nvim-treesitter.withAllGrammars
 
       # colorschemes
       catppuccin-nvim
