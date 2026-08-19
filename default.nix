@@ -9,7 +9,6 @@ let
 
   args = { inherit sources pkgs; };
 
-  nelvim_path = "/home/rodnelkes/Projects/nelvim/nelvim";
   mnw = import sources.mnw;
 
   jj-diffconflicts = buildVimPlugin {
@@ -64,7 +63,7 @@ mnw.lib.wrap pkgs {
         root = ./.;
         fileset = ./nelvim;
       };
-      impure = nelvim_path;
+      impure = "/home/rodnelkes/Projects/nelvim/nelvim";
     };
   };
 }
