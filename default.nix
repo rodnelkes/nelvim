@@ -10,7 +10,7 @@ let
   args = { inherit sources pkgs; };
 in
 mnw.lib.wrap pkgs {
-  appName = "nelvim";
+  appName = "nvim";
 
   aliases = [
     "vi"
@@ -27,9 +27,9 @@ mnw.lib.wrap pkgs {
     dev.nelvim = {
       pure = toSource {
         root = ./.;
-        fileset = ./nelvim;
+        fileset = ./nvim;
       };
-      impure = "/home/rodnelkes/Projects/nelvim/nelvim";
+      impure = "/home/rodnelkes/Projects/nelvim/nvim";
     };
   };
 
