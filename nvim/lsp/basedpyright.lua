@@ -6,7 +6,5 @@ return {
 		"setup.cfg",
 		"requirements.txt",
 		"Pipfile",
-		".git",
-		".jj",
 	},
 }
